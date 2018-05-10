@@ -15,6 +15,7 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductService } from './shared/product.service';
 import { LoginComponent } from './login/login.component';
 import { LoginGuard } from './login-guard';
+import { AuctionMaterialModule } from './auction-material/auction-material.module';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { LoginGuard } from './login-guard';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuctionMaterialModule
   ],
   providers: [
     ProductService,

@@ -16,6 +16,7 @@ import { ProductService } from './shared/product.service';
 import { LoginComponent } from './login/login.component';
 import { LoginGuard } from './login-guard';
 import { AuctionMaterialModule } from './auction-material/auction-material.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AuctionMaterialModule } from './auction-material/auction-material.modul
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuctionMaterialModule
+    AuctionMaterialModule,
+    FormsModule
   ],
   providers: [
     ProductService,

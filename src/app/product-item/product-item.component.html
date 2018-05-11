@@ -1,4 +1,17 @@
-<div class="thumbnail">
+<mat-card>
+  <mat-card-title>{{ product.title }}</mat-card-title>
+  <img mat-card-image src="http://placehold.it/320x150">
+  <mat-card-content>
+    {{ product.description }}
+  </mat-card-content>
+  <div class="ratings">
+    <nga-stars [rating]="product.rating"></nga-stars>
+  </div>
+  <mat-card-actions>
+    <a mat-button color="accent" [routerLink]="['/products', product.id]">VIEW</a>
+  </mat-card-actions>
+</mat-card>
+<!-- <div class="thumbnail">
   <img src="http://placehold.it/320x150">
   <div class="caption">
     <h4 class="float-right">{{ product.price | currency }}</h4>
@@ -8,4 +21,4 @@
   <div class="ratings">
     <nga-stars [rating]="product.rating"></nga-stars>
   </div>
-</div>
+</div> -->
